@@ -1,0 +1,32 @@
+body{
+    background-color: #353535;
+    overflow: hidden;
+}
+button{
+    width: fit-content;
+    padding: 4px 8px;
+    cursor: pointer;
+    border: 1px solid lightgray;
+    border-radius: 3px;
+    background-color: #fff;
+}
+button:hover{
+    background-color: black;
+    color:#fff;
+}
+.container{
+    border : 1px solid black;
+    padding: 20px 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.message{
+    border: 1px solid lightgray;
+    background-color: lightblue;
+    padding: 8px 16px;
+    width: 50%;
+}
+#message-input{
+    width: 80%;
+}
