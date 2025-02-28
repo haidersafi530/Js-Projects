@@ -1,0 +1,39 @@
+.container{
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+.title {
+    font-size: 66px;
+    text-transform: uppercase;
+}
+.counter {
+    font-size: 86px;
+}
+
+/* Button Css */
+.btn{
+    background-color: black;
+    color: #fff;
+    border: none;
+    padding: 8px 16px;
+    cursor: pointer;
+}
+.increment{
+    background-color: black;
+    color: #fff;
+    border: none;
+    padding: 8px 16px;
+    cursor: pointer;
+}
+.decrement{
+    background-color: black;
+    color: #fff;
+    border: none;
+    padding: 8px 16px;
+    cursor: pointer;
+}
+.btn:hover{
+    background-color: #dadada;
+    color: #000;
+}
+  
