@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Slider</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="slider-container">
+        <div class="slider">
+           <div class="slide active" style="background: url(img/shoes1.jpg); background-size: cover; background-repeat: no-repeat; background-position: center;"></div>
+           <div class="slide" style="background: url(img/shoes1.jpg); background-size: cover; background-repeat: no-repeat; background-position: center; filter: grayscale(50%);"></div>
+           <div class="slide" style="background: url(img/shoes1.jpg); background-size: cover; background-repeat: no-repeat; background-position: center; filter: grayscale(100%);"></div>
+        </div>
+
+        <div class="silder-controls">
+            <button class="prev-slide">Prev</button>
+            <button class="next-slide">Next</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
