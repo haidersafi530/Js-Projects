@@ -1,0 +1,18 @@
+#container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 90vh;
+}
+#box{
+    width: 400px;
+    height: 500px;
+    border-radius: 10px;
+    border: 2px solid black;
+}
+#box img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+}
