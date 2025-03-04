@@ -1,0 +1,33 @@
+body{
+    background-color: cornflowerblue;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: sans-serif;
+}
+.container{
+    width: 600px;
+    padding: 20px 40px;
+    background-color: #fff;
+    text-align: center;
+    
+}
+input{
+    width: 300px;
+    outline: none;
+    padding: 6px;
+    border: 1px solid lightblue;
+    margin-bottom: 10px;
+}
+button{
+    width: 60px;
+    height: 26px;
+    border: none;
+    background-color: #000;
+    color: #fff;
+}
+.text ul {
+    
+    background-color: red;
+}
