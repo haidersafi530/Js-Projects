@@ -120,8 +120,21 @@
 // }
 
 
-var amount =  Number(prompt("what is your final amount ?"));
-if(amount > 0 && amount <= 5000){
+// var amount =  Number(prompt("what is your final amount ?"));
+// if(amount > 0 && amount <= 5000){
+//     console.log()
+// }
+// console.log(amount);
+
+//Conditional Statement
+
+let ans = Number(prompt("Enter your age"));
+if(isNaN() == true){
+    console.log("wrong input");
     
+}else if(ans >= 18){
+    console.log("yes you can vote");
 }
-console.log(amount);
+else{
+    console.log("no vote okay");
+};
