@@ -128,13 +128,33 @@
 
 //Conditional Statement
 
-let ans = Number(prompt("Enter your age"));
-if(isNaN() == true){
-    console.log("wrong input");
+// let ans = Number(prompt("Enter your age"));
+// if(isNaN() == true){
+//     console.log("wrong input");
     
-}else if(ans >= 18){
-    console.log("yes you can vote");
-}
-else{
-    console.log("no vote okay");
-};
+// }else if(ans >= 18){
+//     console.log("yes you can vote");
+// }
+// else{
+//     console.log("no vote okay");
+// };
+
+let amount = Number(prompt("enter your amount for percentage"));
+let display = 0;
+if(amount > 5000 && amount <= 7000){
+    display = 0;
+}else if(amount > 7000 && amount <= 9000){
+    display = 5;
+}else if(amount > 9000 && amount <= 12000){
+    display = 15;
+}else if(amount >= 15000){
+    display = 20;
+}else{
+    console.log("please enter your correct value");
+}   
+console.log(amount - Math.floor((display*amount)/100));
+
+
+
+
+
