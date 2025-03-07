@@ -69,3 +69,16 @@
     display: block;
     margin: auto;
   }
+
+  @media screen and (max-width: 722px) {
+    #slideContainer {
+      width: 100%;
+    }
+    .sliderBtn {
+      padding: 0.5rem;
+      font-size: 1rem;
+    }
+    .slide p {
+      padding: 0.5rem 0;
+    }
+  }
