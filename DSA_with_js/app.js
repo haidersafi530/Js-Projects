@@ -261,23 +261,34 @@
 //     default : console.log("invalid")
 // }
 
-let num = (0.1 + 0.2).toFixed(1);
-switch(num){
-    case 0.3 : console.log("Hello");
-    break;
-    case 0.5 : console.log("hey");
-    break;
-    default : console.log("invalid");
+// let num = (0.1 + 0.2).toFixed(1);
+// switch(num){
+//     case 0.3 : console.log("Hello");
+//     break;
+//     case 0.5 : console.log("hey");
+//     break;
+//     default : console.log("invalid");
     
-}
+// }
 
-let number  = Math.round((0.1 + 0.2) * 10) / 10;    
-switch (number){
-    case 0.3 : console.log("Hello");
-    break;
-    case 0.5 : console.log("Hey");
-    break;
-    default : console.log("Invalid");
-};
+// let number  = Math.round((0.1 + 0.2) * 10) / 10;    
+// switch (number){
+//     case 0.3 : console.log("Hello");
+//     break;
+//     case 0.5 : console.log("Hey");
+//     break;
+//     default : console.log("Invalid");
+// };
+
+
+//looop | recursion 
+// for(var i = 1; i < 10; i++){
+//     console.log(i);
+// }
+
+//revers loop 
+// for (var i = 200; i > 99; i--){
+//     console.log(i); 
+// } 
 
 
