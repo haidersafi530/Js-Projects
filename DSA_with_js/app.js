@@ -195,32 +195,89 @@
 
 //PKR Deomination
 
-let amount = 5001;
-if(amount>=500){
-    console.log("500 Notes :" + Math.floor(amount/500));
-    amount = amount%500;
+// let amount = 5001;
+// if(amount>=500){
+//     console.log("500 Notes :" + Math.floor(amount/500));
+//     amount = amount%500;
+// }
+// if(amount>=200){
+//     console.log("200 Notes :" + Math.floor(amount/200));
+//     amount = amount%200;
+// }
+// if(amount>=100){
+//     console.log("100 Nots :" + Math.floor(amount/100));
+//     amount = amount%100;
+// }
+// if(amount>=50){
+//     console.log("50 Nots :" + Math.floor(amount/50))
+//     amount = amount%50;
+// }
+// if(amount>=20){
+//     console.log("20 Notes :" + Math.floor(amount/20));
+//     amount = amount%20;
+// }
+// if(amount>=10){
+//     console.log("10 Notes :" + Math.floor(amount/10));
+//     amount = amount%10;
+// }
+// if(amount === 1){
+//     console.log("1 Notes :" + amount);
+// }
+
+
+//Ternatory Operators
+// 12>13 ? console.log("Yes ")  : console.log("No");
+// console.log(14>13?"Hello":"No");
+// 12>14 ? console.log("Yes ") : console.log("No");
+
+// Nested Ternary Operators 
+// let a = 0;
+// // console.log(a>0?"Positive":a<0?"Negitive":"Zero");
+// console.log(a>0 ? "Positive" : a<0 ? "Negitive" : "Zero");
+
+
+//Swith Case 
+// let day = 2;
+
+// switch(day){
+//     case 1: console.log("sunday");
+//     break;
+//     case 2: console.log("monday");
+//     break
+//     default: console.log("Invalid")
+// }   
+
+// let day = 2;
+// switch(day){
+//     case 1:
+//     case 2:
+//     case 3:
+//         console.log("Yes");
+//         break;
+//     case 4:
+//     case 5:
+//         console.log("Per");
+//         break;
+//     default : console.log("invalid")
+// }
+
+let num = (0.1 + 0.2).toFixed(1);
+switch(num){
+    case 0.3 : console.log("Hello");
+    break;
+    case 0.5 : console.log("hey");
+    break;
+    default : console.log("invalid");
+    
 }
-if(amount>=200){
-    console.log("200 Notes :" + Math.floor(amount/200));
-    amount = amount%200;
-}
-if(amount>=100){
-    console.log("100 Nots :" + Math.floor(amount/100));
-    amount = amount%100;
-}
-if(amount>=50){
-    console.log("50 Nots :" + Math.floor(amount/50))
-    amount = amount%50;
-}
-if(amount>=20){
-    console.log("20 Notes :" + Math.floor(amount/20));
-    amount = amount%20;
-}
-if(amount>=10){
-    console.log("10 Notes :" + Math.floor(amount/10));
-    amount = amount%10;
-}
-if(amount === 1){
-    console.log("1 Notes :" + amount);
-}
+
+let number  = Math.round((0.1 + 0.2) * 10) / 10;    
+switch (number){
+    case 0.3 : console.log("Hello");
+    break;
+    case 0.5 : console.log("Hey");
+    break;
+    default : console.log("Invalid");
+};
+
 
