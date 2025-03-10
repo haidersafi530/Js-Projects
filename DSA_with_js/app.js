@@ -340,7 +340,13 @@
 // }
 // var n = Number(prompt("kahan tak jaogy"));
 
-function hi(){
+// var i = 1;
+// while(i<20){
+//     console.log(i);
+//     i++;
+// }
 
-}
-hi();
+var ans = prompt("kuch bhi  dedo (exit for close)");
+while(ans !== 'exit'){
+    ans = prompt("kuch bhi  dedo (exit for close)");
+};
