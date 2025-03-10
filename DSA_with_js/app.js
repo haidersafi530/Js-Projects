@@ -316,20 +316,28 @@
 
 //sum calcultaion 
 
-var n = Number(prompt("kahan tak jaogy"));
-if(isNaN(n)){
-    console.log("invalid input");
-}
-else {
-    if(n > 0){
-        var sum = 0;    
-        for (var i = 1; i<=n; i++){
-            sum = sum + i;
+var pr = prompt("Add");
+
+if(pr === null){
+    console.log("cancaled");
+}else{
+    var n = Number(pr);
+    if(isNaN(n)){
+        console.log("invalid input");
+    }
+    else {
+        if(n > 0){
+            var sum = 0;    
+            for (var i = 1; i<=n; i++){
+                sum = sum + i;
+            }
+            console.log(sum);
         }
-        console.log(sum);
-    }
-    else{
-        console.log("should be positive more than 0");
+        else{
+            console.log("should be positive more than 0");
+        }
     }
 }
-hi
+// var n = Number(prompt("kahan tak jaogy"));
+
+
