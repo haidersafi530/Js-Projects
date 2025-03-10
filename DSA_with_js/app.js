@@ -291,4 +291,44 @@
 //     console.log(i); 
 // } 
 
+// for(var i = 200; i > 99; i--){
+//     console.log(i);
+// }
 
+// let n = Number(prompt("Enter Your Value"));
+
+// if(isNaN(n)){
+//     console.log("invalid input");
+// }
+// else {
+//     if(n > 0){
+//         var sum = 0;
+//         for (var i = 1; i <= n; i++){
+//             sum = sum + i;
+//         }
+//         console.log(sum);
+//     }
+//     else{
+//         console.log("should be positive ");
+//     }
+// }
+
+
+//sum calcultaion 
+
+var n = Number(prompt("kahan tak jaogy"));
+if(isNaN(n)){
+    console.log("invalid input");
+}
+else {
+    if(n > 0){
+        var sum = 0;    
+        for (var i = 1; i<=n; i++){
+            sum = sum + i;
+        }
+        console.log(sum);
+    }
+    else{
+        console.log("should be positive more than 0");
+    }
+}
