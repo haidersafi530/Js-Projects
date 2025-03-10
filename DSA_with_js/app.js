@@ -340,4 +340,7 @@
 // }
 // var n = Number(prompt("kahan tak jaogy"));
 
-hi
+function hi(){
+
+}
+hi();
