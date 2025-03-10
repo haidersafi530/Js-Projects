@@ -346,7 +346,96 @@
 //     i++;
 // }
 
-var ans = prompt("kuch bhi  dedo (exit for close)");
-while(ans !== 'exit'){
-    ans = prompt("kuch bhi  dedo (exit for close)");
-};
+// var ans = prompt("kuch bhi  dedo (exit for close)");
+// while(ans !== 'exit'){
+//     ans = prompt("kuch bhi  dedo (exit for close)");
+// };
+
+//sum of digits 
+
+//guess the number 
+
+// let random  = Math.floor(Math.random()*100) +1;
+// let guess = -1;
+// while(guess !== random){
+//     guess = Number(prompt("guess the number"));
+//     if(isNaN(guess) || guess <1 || guess > 100){
+//         console.log("try again");
+//         continue
+//     }
+//     if(guess>random){
+//         console.log("too high");
+//     }
+//     else if(guess < random){
+//         console.log("tow low ");
+//     }
+//     else{
+//         console.log("Congrates ", guess);
+//     }
+// }
+
+//Arrays in javascript 
+// let arr = [];
+// arr.push(100);
+// arr.push(10);
+// arr.push(20);
+// arr.push(30);
+// arr.pop();
+// console.log(arr);
+
+// let arr = [];
+// arr[0] = 100;
+// arr[1] = 10;
+// arr[2] = 30;
+// arr[7] = 150;
+// console.log(arr);
+
+// let arr = new Array(3);
+// arr.push(10);
+// // arr[0] = 10;
+// // arr[1] = 20;
+// // arr[2] = 30;
+// // arr[3] = 100;
+// // arr[10] = 150;
+// console.log(arr);
+
+// let arr = new Array(5);
+// // arr[0] = Number(prompt("enter a value"));
+// for(let i = 0; i < arr.length; i++){
+//     arr[i] = Number(prompt("Enter a value"));
+// };
+// console.log(arr);
+
+// let arr = [10,20,30,40,50];
+// let sum = 0;
+// for (let i = 0; i < arr.length; i++){
+//     sum = sum + arr[i];
+// }
+// console.log(sum);
+
+// let arr = [10,20,30,40,50,4];
+// let max = arr[0];
+// for (let i = 1; i < arr.length; i++){
+//     if(max > arr[i]){
+//         max = arr[i];
+//     }   
+// }
+// console.log(max);
+
+// let arr = [10,20,30,40,59];
+// let max = arr[0];
+// for(let i = 1; i < arr.length; i++){
+//     if(max < arr[i]){
+//         max = arr[i];
+//     }
+// }
+// console.log(max);
+
+let arr = [10,20,39,40,50];
+let max = arr[0];
+for(let i = 1; i < arr.length; i++){
+    if(max < arr[i]){
+        max = arr[i];
+    }
+}
+console.log(max);
