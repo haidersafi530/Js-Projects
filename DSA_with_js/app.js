@@ -440,11 +440,34 @@
 // }
 // console.log(max);
 
-let arr = [10,20,39,40,50];
-let max  = arr[0];
-for (let i = 1; i <  arr.length; i++){
-    if(max < arr[i]){
+// let arr = [10,20,39,40,50];
+// let max  = arr[0];
+// for (let i = 1; i <  arr.length; i++){
+//     if(max < arr[i]){
+//         max = arr[i];
+//     }
+// }
+// console.log(max);
+
+// let arr = [1,5,10,50,100];
+// let max = arr[0];
+// for(let i = 1; i < arr.length; i++){
+//     if(max < arr[i]){
+//         max = arr[i];
+//     }
+// }
+// console.log(max);
+
+let arr = [10,30,56,43,29,64,49,60];
+let max = Math.max(arr[0], arr[1]);
+let Smax = Math.min(arr[0],arr[1]);
+
+for (let i = 2; i < arr.length; i++){
+    if(arr[i] > max){
+        Smax = max;
         max = arr[i];
+    }else if(arr[i] > Smax && max != arr[i]) {
+        Smax = arr[i];
     }
 }
-console.log(max);
+console.log(Smax);
