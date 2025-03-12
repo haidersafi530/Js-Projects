@@ -595,16 +595,60 @@
 // const numbers = [1,2,3,4,5];
 // findPairs(numbers);
 
-function findPairs(arr){
-    for (let i = 0; i < arr.length; i++){
+// function findPairs(arr){
+//     for (let i = 0; i < arr.length; i++){
+
+//     }
+//     for (let j = 0; j < 5; j++){
+//         console.log("-----------", j);
+//     }
+// }
+// const numbers = [1,2,3,4,5];
+// findPairs(numbers);
+
+//array again 
+// const stringArr = ['a', 'b', 'c', 'd', 'e'];
+// const numArr = [1,2,3,4,5];
+// const boolArr = [true, false];
+// const mixed =  ['a', 2, true, undefined, null, {a: 'a'},['b']];
+// console.log(mixed);
+
+// class MyArray {
+//     constructor(){
+//         this.length = 0;
+//         this.data = {}
+//     }
+//     push(value){
+//         this.data[this.length] = value;
+//         this.length++;
+//         return this.length;
+
+//     }
+// }
+// const myNewArray = new MyArray();
+// console.log(myNewArray.push(30));
+
+class MyArray {
+    constructor(){
+        this.length = 1;
+        this.data = {};
 
     }
-    for (let j = 0; j < 5; j++){
-        console.log("-----------", j);
+    push(value){
+        this.data[this.length] = value;
+        this.length++;
+        return this.length;
+
     }
 }
-const numbers = [1,2,3,4,5];
-findPairs(numbers);
+function loop(arr){
+    const myNewArray = new MyArray();
+    for (let i = 0; i < arr.length; i++){
+        myNewArray.push(arr[i]);
+    }
+    console.log(myNewArray.data);
+}
+loop([20,0,0,0]);
 
     
 
