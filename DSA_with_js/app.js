@@ -650,19 +650,40 @@
 // }
 // loop([10,20,30,40]);
 
+// class MyArray {
+//     constructor(){
+//         this.length = 1;
+//         this.data = {};
+//     }
+//     push(item){
+//         this.data[this.length] = item;
+//         this.length++;
+//         return this.length;}
+// }
+// const myNewArray = new MyArray();
+// myNewArray.push("apple");
+// console.log(myNewArray);
+
 class MyArray {
     constructor(){
-        this.length = 1;
+        this.length = 0;
         this.data = {};
     }
     push(item){
         this.data[this.length] = item;
         this.length++;
-        return this.length;}
+        return this.length;
+    }
+    get(index){
+        return this.data[index];
+    }
 }
+
 const myNewArray = new MyArray();
-myNewArray.push("apple");
-console.log(myNewArray);
+myNewArray.push('apple');
+myNewArray.push('orange');
+myNewArray.push('mango');
+console.log(myNewArray.get(1));
 
 
 
