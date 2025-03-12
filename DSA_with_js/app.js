@@ -677,13 +677,20 @@ class MyArray {
     get(index){
         return this.data[index];
     }
+    pop(){
+        const lastItem = this.data[this.length -1];
+        delete this.data[this.length -1];
+        this.length--
+        return lastItem;
+    }
 }
 
 const myNewArray = new MyArray();
 myNewArray.push('apple');
 myNewArray.push('orange');
 myNewArray.push('mango');
-console.log(myNewArray.get(1));
+myNewArray.pop();
+console.log(myNewArray);
 
 
 
