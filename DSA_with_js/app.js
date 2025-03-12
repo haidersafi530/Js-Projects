@@ -628,27 +628,43 @@
 // const myNewArray = new MyArray();
 // console.log(myNewArray.push(30));
 
+// class MyArray {
+//     constructor(){
+//         this.length = 1;
+//         this.data = {};
+
+//     }
+//     push(item){
+//         this.data[this.length] = item;
+//         this.length++;
+//         return this.length;
+
+//     }
+// }
+// function loop(arr){
+//     const myNewArray = new MyArray();
+//     for (let i = 0; i < arr.length; i++){
+//         myNewArray.push(arr[i]);
+//     }
+//     console.log(myNewArray.data);
+// }
+// loop([10,20,30,40]);
+
 class MyArray {
     constructor(){
         this.length = 1;
         this.data = {};
-
     }
-    push(value){
-        this.data[this.length] = value;
+    push(item){
+        this.data[this.length] = item;
         this.length++;
-        return this.length;
+        return this.length;}
+}
+const myNewArray = new MyArray();
+myNewArray.push("apple");
+console.log(myNewArray);
 
-    }
-}
-function loop(arr){
-    const myNewArray = new MyArray();
-    for (let i = 0; i < arr.length; i++){
-        myNewArray.push(arr[i]);
-    }
-    console.log(myNewArray.data);
-}
-loop([20,0,0,0]);
+
 
     
 
