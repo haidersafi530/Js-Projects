@@ -519,20 +519,92 @@
 // }
 // findStudent(studentsDatabase, 'Imran');
 
-const groceries = ["milk", "bread", "eggs", "flour", "choose", "sugar"];
-const searchForItem = (item) =>{
-    for(let i = 0; i < groceries.length; i++){
-        if(groceries[i] === item){
-            console.log(`Found ${item}`);
-        }
+// const groceries = ["milk", "bread", "eggs", "flour", "choose", "sugar"];
+// const searchForItem = (item) =>{
+//     for(let i = 0; i < groceries.length; i++){
+//         if(groceries[i] === item){
+//             console.log(`Found ${item}`);
+//         }
+//     }
+//     for(let j = 0; j < groceries.length; j++){
+//         if(groceries[j] === item){
+//             console.log(`Found ${item} 2`);
+//         }
+//     }
+// }
+// searchForItem("eggs");
+
+
+// const numbers = [1,2,3,4,5];
+// const getElement = (arr, index) => arr[index];
+// console.log(getElement(numbers, 0));
+
+// function findPairs(arr){
+//     for(let i = 0; arr.length; i++){
+//         for(let j = i + 1; j < arr.length; j++){
+//             console.log(`Pairs ${arr[i]}, ${arr[i]}`);
+//         }
+//     }
+// }
+// const numbers =  [1,2,3,4,5];
+// findPairs(numbers);
+
+// function findPairs(arr){
+//     for (let i = 0; i < arr.length; i++){
+
+//     }
+//     for(let q = 0; q < arr.length; q++){
+//         console.log("-------", q);
+        
+//     }
+// }
+
+// const numbers = [1,2,3,4,5];
+// findPairs(numbers);
+
+// function findPairs(){
+//     for(let i = 0; i < arr.length; i++){
+
+//     }
+//     for(let q = 0 ; q < 5; q++){
+//         console.log('-------', );
+//     }
+// }
+// const numbers = [1,2,3,4,5];
+// findPairs(numbers);
+
+// function findPairs(arr){
+//     for(let i = 0; i < arr.lengthl; i++){
+//         for(let j = i + 1; i < arr.length; j++){
+//             console.log(`Pair : ${arr[i]}, ${arr[j]}`);
+//         }
+//     }
+// }
+// const numbers = [1,2,3,4,5];
+// findPairs(numbers);
+
+// function findPairs(arr){
+//     for (let i = 0; i < arr.length; i++){
+//         for(let j = i + 1; j < arr.length; j++){
+//             console.log(`Pairs : ${arr[i]}, ${arr[j]}`);
+            
+//         }
+//     }
+// }
+
+// const numbers = [1,2,3,4,5];
+// findPairs(numbers);
+
+function findPairs(arr){
+    for (let i = 0; i < arr.length; i++){
+
     }
-    for(let j = 0; j < groceries.length; j++){
-        if(groceries[j] === item){
-            console.log(`Found ${item} 2`);
-        }
+    for (let j = 0; j < 5; j++){
+        console.log("-----------", j);
     }
 }
-searchForItem("eggs");
+const numbers = [1,2,3,4,5];
+findPairs(numbers);
 
     
 
