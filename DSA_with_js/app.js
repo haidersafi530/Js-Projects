@@ -753,10 +753,25 @@
 //reverse string 
 // const reverseString = str => str.split('');
 
-const reverseString = function(str){
-    return str.split('');
+// const reverseString = function(str){
+//     return str.split('').reverse().join('');
+// }
+// console.log(reverseString("hello"));
+
+//Palindrome
+// const palindrome = function(str){
+//     return str.split('').reverse().join('') === str;    
+// }
+// console.log(palindrome('Haider'));
+
+//reverse int
+const reverseInt = n => {
+    const reversed = n.toString().split('').reverse().join('');
+    return parseInt(reversed) * Math.sign(n);
 }
-console.log(reverseString("hello"));
+console.log(reverseInt(4637));
+
+
 
 
 
