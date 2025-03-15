@@ -799,22 +799,39 @@
 
 //Max Profit 
 
-const maxProfit = (prices) => {
-    let maxPrice = prices[0];
-    let maxProfit = 0;
-    for (let i = 1; i < prices.length; i++){
-        const currentPrice = prices[i];
-        maxPrice = Math.min(maxPrice, currentPrice);
-        const portentialProfit = currentPrice - maxPrice;
-        maxProfit = Math.max(maxProfit, portentialProfit);
-        console.log(maxProfit);
-    }
-    return maxProfit;
+// const maxProfit = (prices) => {
+//     let maxPrice = prices[0];
+//     let maxProfit = 0;
+//     for (let i = 1; i < prices.length; i++){
+//         const currentPrice = prices[i];
+//         maxPrice = Math.min(maxPrice, currentPrice);
+//         const portentialProfit = currentPrice - maxPrice;
+//         maxProfit = Math.max(maxProfit, portentialProfit);
+//         console.log(maxProfit);
+//     }
+//     return maxProfit;
 
+// }
+// const prices = [7,6,5,4,3,2,1];
+// const profit = maxProfit(prices);
+// console.log("Maximam Profit = ", profit);
+
+//Array Chunk 
+const chunk = (array, size) => {
+    const chunked = []
+    let index = 0;
+    
+    while (index < array.length){
+        const chunk = array.slice(index, index + size );
+        console.log("--", chunk);
+        chunked.push(chunk);
+        index += size;
+    }
+    return chunked;
 }
-const prices = [7,6,5,4,3,2,1];
-const profit = maxProfit(prices);
-console.log("Maximam Profit = ", profit);
+console.log(chunk([1,2,3,4,5,6,7,8], 3));
+
+
 
 
 
