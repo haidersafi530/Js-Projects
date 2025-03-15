@@ -797,7 +797,7 @@
 // fizzBuzz(15);
 
 
-//Max Profit 
+// Max Profit 
 
 // const maxProfit = (prices) => {
 //     let maxPrice = prices[0];
@@ -817,22 +817,37 @@
 // console.log("Maximam Profit = ", profit);
 
 //Array Chunk 
-const chunk = (array, size) => {
-    const chunked = []
-    let index = 0;
+// const chunk = (array, size) => {
+//     const chunked = []
+//     let index = 0;
     
-    while (index < array.length){
-        const chunk = array.slice(index, index + size );
-        console.log("--", chunk);
-        chunked.push(chunk);
-        index += size;
+//     while (index < array.length){
+//         const chunk = array.slice(index, index + size );
+//         console.log("--", chunk);
+//         chunked.push(chunk);
+//         index += size;
+//     }
+//     return chunked;
+// }
+// console.log(chunk([1,2,3,4,5,6,7,8], 3));   
+
+
+//Two Sum
+function twoSum(nums, target){
+    for(let i = 0; i < nums.length; i++){
+        for(let j = i + 1; j < nums.length; j++){
+            //if the current number 
+            if(nums[i] + nums[j] === target){
+                return [i,j];
+            }
+        }
     }
-    return chunked;
+    return [];
 }
-console.log(chunk([1,2,3,4,5,6,7,8], 3));
-
-
-
+const res = twoSum([2,7,11,15],9);
+const res2 = twoSum([2,4,5,7,9], 11);
+console.log(res);
+console.log(res2);
 
 
 
