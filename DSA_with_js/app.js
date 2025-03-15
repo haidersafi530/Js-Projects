@@ -714,18 +714,30 @@
 
 //revers string 
 
-const reverseString = str => str.split('').reverse().join();
-console.log(reverseString('Hello'));
+// const reverseString = str => str.split('').reverse().join();
+// console.log(reverseString('Hello'));
 
-function reverseArray(arr) {
-    let reversed = [];
-    for (let i = arr.length - 1; i >= 0; i--) {
-        reversed.push(arr[i]);
-    }
-    return reversed;
+// function reverseArray(arr) {
+//     let reversed = [];
+//     for (let i = arr.length - 1; i >= 0; i--) {
+//         reversed.push(arr[i]);
+//     }
+//     return reversed;
+// }
+
+// console.log(reverseArray([1, 2, 3, 4, 5])); 
+
+//reverse string 
+
+var string = prompt("Please enter a string");
+var strLen = string.length;
+var revStr = '';
+for(var i = strLen-1; i >= 0; i--){
+    revStr += string[i];
 }
+console.log(`${string} reverse is ${revStr}`);
 
-console.log(reverseArray([1, 2, 3, 4, 5])); 
+
 
 
 
