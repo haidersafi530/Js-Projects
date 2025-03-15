@@ -765,11 +765,19 @@
 // console.log(palindrome('Haider'));
 
 //reverse int
-const reverseInt = n => {
-    const reversed = n.toString().split('').reverse().join('');
-    return parseInt(reversed) * Math.sign(n);
-}
-console.log(reverseInt(4637));
+// const reverseInt = n => {
+//     const reversed = n.toString().split('').reverse().join('');
+//     return parseInt(reversed) * Math.sign(n);
+// }
+// console.log(reverseInt(4637));
+
+//sentence capitalization 
+const capitalize = str => {
+    return str.toLowerCase().split('').map(word => word[0].toUpperCase() + word.slice(1)).join('');
+};
+console.log(capitalize("Hello Word"));
+
+
 
 
 
