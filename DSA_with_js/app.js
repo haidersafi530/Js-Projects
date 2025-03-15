@@ -777,22 +777,48 @@
 // };
 // console.log(capitalize("Hello Word"));
 
-const fizzBuzz = (n) => {
-    for (let i = 1; i < n; i++){
-        if(i % 3 === 0 && i % 5 === 0){
-            console.log('fizzBuzz');
-        }
-        else if(i % 3 === 0){
-            console.log('Fizz');
-        }
-        else if(i % 5 === 0){
-            console.log("Buzz");
-        }else{
-            console.log(i);
-        }
+
+//FizzBUzz
+// const fizzBuzz = (n) => {
+//     for (let i = 1; i < n; i++){
+//         if(i % 3 === 0 && i % 5 === 0){
+//             console.log('fizzBuzz');
+//         }
+//         else if(i % 3 === 0){
+//             console.log('Fizz');
+//         }
+//         else if(i % 5 === 0){
+//             console.log("Buzz");
+//         }else{
+//             console.log(i);
+//         }
+//     }
+// }
+// fizzBuzz(15);
+
+
+//Max Profit 
+
+const maxProfit = (prices) => {
+    let maxPrice = prices[0];
+    let maxProfit = 0;
+    for (let i = 1; i < prices.length; i++){
+        const currentPrice = prices[i];
+        maxPrice = Math.min(maxPrice, currentPrice);
+        const portentialProfit = currentPrice - maxPrice;
+        maxProfit = Math.max(maxProfit, portentialProfit);
+        console.log(maxProfit);
     }
+    return maxProfit;
+
 }
-fizzBuzz(15);
+const prices = [7,6,5,4,3,2,1];
+const profit = maxProfit(prices);
+console.log("Maximam Profit = ", profit);
+
+
+
+
 
 
 
