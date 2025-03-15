@@ -729,14 +729,26 @@
 
 //reverse string 
 
-var string = prompt("Please enter a string");
-var strLen = string.length;
-var revStr = '';
-for(var i = strLen-1; i >= 0; i--){
-    revStr += string[i];
-}
-console.log(`${string} reverse is ${revStr}`);
+// var string = prompt("Please enter a string");
+// var strLen = string.length;
+// var revStr = '';
+// for(var i = strLen-1; i >= 0; i--){
+//     revStr += string[i];
+// }
+// console.log(`${string} reverse is ${revStr}`);
 
+
+//Palindromes 
+let string = prompt("Please enter your string");
+let len = string.length;
+let msg = "it is a palindrome";
+for(var i = 0; i < len/2; i++){
+    if(string[i] != string[len -1 -i]){
+        msg = "it is not palindrome";   
+    }
+    console.log(`${string} : ${msg}`);
+    
+}
 
 
 
