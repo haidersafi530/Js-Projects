@@ -772,10 +772,27 @@
 // console.log(reverseInt(4637));
 
 //sentence capitalization 
-const capitalize = str => {
-    return str.toLowerCase().split('').map(word => word[0].toUpperCase() + word.slice(1)).join('');
-};
-console.log(capitalize("Hello Word"));
+// const capitalize = str => {
+//     return str.toLowerCase().split('').map(word => word[0].toUpperCase() + word.slice(1)).join('');
+// };
+// console.log(capitalize("Hello Word"));
+
+const fizzBuzz = (n) => {
+    for (let i = 1; i < n; i++){
+        if(i % 3 === 0 && i % 5 === 0){
+            console.log('fizzBuzz');
+        }
+        else if(i % 3 === 0){
+            console.log('Fizz');
+        }
+        else if(i % 5 === 0){
+            console.log("Buzz");
+        }else{
+            console.log(i);
+        }
+    }
+}
+fizzBuzz(15);
 
 
 
