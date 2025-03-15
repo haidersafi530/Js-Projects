@@ -739,16 +739,26 @@
 
 
 //Palindromes 
-let string = prompt("Please enter your string");
-let len = string.length;
-let msg = "it is a palindrome";
-for(var i = 0; i < len/2; i++){
-    if(string[i] != string[len -1 -i]){
-        msg = "it is not palindrome";   
-    }
-    console.log(`${string} : ${msg}`);
+// let string = prompt("Please enter your string");
+// let len = string.length;
+// let msg = "it is a palindrome";
+// for(var i = 0; i < len/2; i++){
+//     if(string[i] != string[len -1 -i]){
+//         msg = "it is not palindrome";   
+//     }
+//     console.log(`${string} : ${msg}`);
     
+// }
+
+//reverse string 
+// const reverseString = str => str.split('');
+
+const reverseString = function(str){
+    return str.split('');
 }
+console.log(reverseString("hello"));
+
+
 
 
 
