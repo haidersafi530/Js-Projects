@@ -931,19 +931,26 @@
 //     console.log(i, str);
 // }
 
-//
-function getData(dataId, getNextData){
-    setTimeout(() => {
-        console.log("data", dataId);
-        if(getNextData){
-            getNextData();
-        }
+//Callback
+// function getData(dataId, getNextData){
+//     setTimeout(() => {
+//         console.log("data", dataId);
+//         if(getNextData){
+//             getNextData();
+//         }
         
-    }, 2000);   
+//     }, 2000);   
 
-}
-getData(1, () => {
-    getData(2);
+// }
+// getData(1, () => {
+//     getData(2); 
+// })
+
+//Promises in Js
+
+let promise = new Promise ((resolve, reject) => {
+    console.log("Im a promise");
+    reject("some error");
 })
 
 
