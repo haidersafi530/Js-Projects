@@ -850,23 +850,56 @@
 // console.log(res2);
 
 //linked List 
-class Node {
-    constructor(value){
-        this.head = value;
-        this.next = null;
+// class Node {
+//     constructor(value){
+//         this.head = value;
+//         this.next = null;
         
-    }
-}
-class LinkedList {
-    constructor(value){
-        this.head = new Node(value);
-        this.tail = this.head;
-        this.length = 1;
+//     }
+// }
+// class LinkedList {
+//     constructor(value){
+//         this.head = new Node(value);
+//         this.tail = this.head;
+//         this.length = 1;
 
-    }
-}
-const myLinkedList = new LinkedList(1);
-console.log(myLinkedList);
+//     }
+// }
+// const myLinkedList = new LinkedList(1);
+// console.log(myLinkedList);
+
+//LinkedList Implementation
+// class Node {
+//     constructor(data){
+//         this.data = data;
+//         this.next = null;
+
+//     }
+// }
+// class LinkedList{
+//     constructor(){
+//         this.head = null;
+//     }
+//     insertAtEnd(data) {
+//         const newNode = new Node()
+//     }
+// }
+
+//async await >> promise chains >> callback hell
+console.log("one");
+console.log("two");
+
+setTimeout(() => {
+    console.log("hello");
+
+}, 4000);
+
+console.log("three");
+console.log("four");
+
+
+
+
 
 
 
