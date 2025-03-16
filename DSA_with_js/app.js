@@ -833,21 +833,40 @@
 
 
 //Two Sum
-function twoSum(nums, target){
-    for(let i = 0; i < nums.length; i++){
-        for(let j = i + 1; j < nums.length; j++){
-            //if the current number 
-            if(nums[i] + nums[j] === target){
-                return [i,j];
-            }
-        }
+// function twoSum(nums, target){
+//     for(let i = 0; i < nums.length; i++){
+//         for(let j = i + 1; j < nums.length; j++){
+//             //if the current number 
+//             if(nums[i] + nums[j] === target){
+//                 return [i,j];
+//             }
+//         }
+//     }
+//     return [];
+// }
+// const res = twoSum([2,7,11,15],9);
+// const res2 = twoSum([2,4,5,7,9], 11);
+// console.log(res);
+// console.log(res2);
+
+//linked List 
+class Node {
+    constructor(value){
+        this.head = value;
+        this.next = null;
+        
     }
-    return [];
 }
-const res = twoSum([2,7,11,15],9);
-const res2 = twoSum([2,4,5,7,9], 11);
-console.log(res);
-console.log(res2);
+class LinkedList {
+    constructor(value){
+        this.head = new Node(value);
+        this.tail = this.head;
+        this.length = 1;
+
+    }
+}
+const myLinkedList = new LinkedList(1);
+console.log(myLinkedList);
 
 
 
