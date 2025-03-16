@@ -897,13 +897,48 @@
 // console.log("three");
 // console.log("four");
 
-function sum(a,b) {
-    console.log(a + b);
+//callback
+
+// function sum(a,b) {
+//     console.log(a + b);
+// }
+// function calculator(a, b, sumCallback){
+//     sumCallback(a,b);
+// }
+// calculator(10,20,sum);
+
+//Nesting 
+// let age = 19;
+// if(age >= 18){
+
+//     if(age >= 60){
+//         console.log("Senior");
+//     }
+//     else{
+//         console.log("Middle");
+//     }
+// }else{
+//     console.log("Child");
+// }
+
+//nesting loop
+
+// for(let i = 0; i < 5; i++){
+//     let str = "";
+//     for(let j = 0; j < 5; j++){
+//         str = str + j;
+//     }
+//     console.log(i, str);
+// }
+
+//
+function getData(dataId){
+    setTimeout(() => {
+        console.log("data", dataId);
+    }, 2000);
+
 }
-function calculator(a, b, sumCallback){
-    sumCallback(a,b);
-}
-calculator(10,20,sum);
+
 
 
 
