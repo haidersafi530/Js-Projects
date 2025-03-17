@@ -7,7 +7,7 @@ async function getApi() {
         }
     });
     let joke = await getting.json();
-    let data = joke.setup;
+    let data = joke.punchline;
     get.innerHTML=data;
     console.log(data);
 }
