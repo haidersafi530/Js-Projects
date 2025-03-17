@@ -970,21 +970,50 @@
 //     console.log("Im a Promise");
 //     reject("Some error occurred");
 // })
-const getPromise = () =>{
-    return new Promise ( (resolve, reject) => {
-        console.log("im a promise");
-        // resolve("123");
-        reject("error");
-    });
-};
-let promise = getPromise();
-promise.then( () => {
-    console.log("Promise fullfilled");
-})
-promise.catch( (e) => {
-    console.log("Rejected", e);
-})
+// const getPromise = () =>{
+//     return new Promise ( (resolve, reject) => {
+//         console.log("im a promise");
+//         // resolve("123");
+//         reject("error");
+//     });
+// };
+// let promise = getPromise();
+// promise.then( () => {
+//     console.log("Promise fullfilled");
+// })
+// promise.catch( (e) => {
+//     console.log("Rejected", e);
+// })   
 
+
+//Promise Chain
+
+// function asyncFunc(){
+//     return new Promise ( (resolve, reject) => {
+//         setTimeout(() => {
+//             console.log('sum data 1');
+//             resolve("success");
+//         }, 3000);
+//     });
+// };
+// console.log("Fetching data 1");     
+// let p1 = asyncFunc();
+// p1.then( (res) => {
+//     console.log(res);
+// });
+
+//async await
+function api() {
+    return new Promise ((resolve, reject) => {
+        setTimeout(() => {
+            console.log("perfect data");
+            resolve(200);
+        }, 2000);
+    });
+}
+async function getWhetherData() {
+    await api();
+}
 
 
 
