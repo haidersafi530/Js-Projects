@@ -953,18 +953,39 @@
 //     reject("some error");
 // })
 
-function getData(dataId, getNextData){
-    return new Promise((resolve, reject) => {
-        setTimeout(() => {
-            // console.log("data", dataId);
-            // resolve("success");
-            reject("error");
-            if(getNextData){
-                getNextData();
-            }
-        }, 2000);
-    })
-}
+// function getData(dataId, getNextData){
+//     return new Promise((resolve, reject) => {
+//         setTimeout(() => {
+//             // console.log("data", dataId);
+//             // resolve("success");
+//             reject("error");
+//             if(getNextData){
+//                 getNextData();
+//             }
+//         }, 2000);
+//     })
+// }
+
+// let promise = new Promise ((resolve, reject) => {
+//     console.log("Im a Promise");
+//     reject("Some error occurred");
+// })
+const getPromise = () =>{
+    return new Promise ( (resolve, reject) => {
+        console.log("im a promise");
+        // resolve("123");
+        reject("error");
+    });
+};
+let promise = getPromise();
+promise.then( () => {
+    console.log("Promise fullfilled");
+})
+promise.catch( (e) => {
+    console.log("Rejected", e);
+})
+
+
 
 
 
