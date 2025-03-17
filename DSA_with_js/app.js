@@ -1003,18 +1003,33 @@
 // });
 
 //async await
-function api() {
+// function api() {
+//     return new Promise ((resolve, reject) => {
+//         setTimeout(() => {
+//             console.log("perfect data");
+//             resolve(200);
+//         }, 2000);
+//     });
+// }
+// async function getWhetherData() {
+//     await api();
+// }
+
+function getData(dataId) {
     return new Promise ((resolve, reject) => {
         setTimeout(() => {
-            console.log("perfect data");
-            resolve(200);
+            console.log("data", dataId);
+            resolve("success");
         }, 2000);
     });
 }
-async function getWhetherData() {
-    await api();
-}
 
+async function getAllData() {
+    await getData(1);
+    await getData(2);
+    await getData(3);
+    
+}
 
 
 
