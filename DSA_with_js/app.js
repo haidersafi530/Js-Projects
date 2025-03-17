@@ -948,10 +948,23 @@
 
 //Promises in Js
 
-let promise = new Promise ((resolve, reject) => {
-    console.log("Im a promise");
-    reject("some error");
-})
+// let promise = new Promise ((resolve, reject) => {
+//     console.log("Im a promise");
+//     reject("some error");
+// })
+
+function getData(dataId, getNextData){
+    return new Promise((resolve, reject) => {
+        setTimeout(() => {
+            // console.log("data", dataId);
+            // resolve("success");
+            reject("error");
+            if(getNextData){
+                getNextData();
+            }
+        }, 2000);
+    })
+}
 
 
 
