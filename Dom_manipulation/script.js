@@ -67,14 +67,35 @@ btn.addEventListener('click', function(){
     if(flag == 0){
         bulb.style.backgroundColor = "yellow";
         console.log("CLikced");
+        btn.innerHTML = "OFF";
         flag = 1;
     }
     else{
         bulb.style.backgroundColor = "transparent";
         console.log("Again clicked");
+        btn.innerHTML = "ON";
         flag = 0;
     }
 });
+
+//Selecting multiple elements 
+var h = document.querySelectorAll('h3');
+h.forEach(function(e){
+    console.log(e);
+});
+
+//Method 2
+// // for(var i = 0; i < h.length; i++){
+// //     console.log(h[i]);
+// // }
+
+//Method 3
+// var i = 0;
+// while(i < h.length){
+//     console.log(h[i]);
+//     i++;
+// }
+
 
 
 
