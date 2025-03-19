@@ -12,8 +12,7 @@ h1{
     cursor: pointer;
 }
 #bulb{
-    margin: auto;
-    
+    margin: auto;   
     height: 300px;
     width: 300px;
     border-radius: 50%;
@@ -33,5 +32,4 @@ button{
 h2{
     font-size: 40px;
     font-weight: bold;
-    
 }
