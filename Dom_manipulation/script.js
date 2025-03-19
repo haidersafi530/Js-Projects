@@ -96,6 +96,17 @@ h.forEach(function(e){
 //     i++;
 // }
 
+//SetTimeOut
+var p = document.querySelector('p');
+p.innerHTML = "bye";
+p.style.textAlign = "center";
+
+var box = document.querySelector('#box');
+setTimeout(() => {
+    box.style.display = "flex";
+    box.style.justifyContent = "center";
+ }, 2000);
+
 
 
 
