@@ -67,21 +67,32 @@
 
 // getFacts(); // Call the function to test it
 
-const URL = "https://dog.ceo/api/breeds/image/random";
-const btn = document.getElementById('btn');
-const img = document.getElementById('img');
+// const URL = "https://dog.ceo/api/breeds/image/random";
+// const btn = document.getElementById('btn');
+// const img = document.getElementById('img');
 
-const getData = async () => {
+// const getData = async () => {
+//     let response = await fetch(URL);
+//     let data = await response.json();
+//     console.log(data);
+//     console.log(data.message);
+
+//     btn.addEventListener('click', getData);
+    
+// }
+
+// getData();
+
+const URL = 'https://dog.ceo/api/breeds/image/random';
+const getFacts = async () => {
+    console.log('getting data from ....');
     let response = await fetch(URL);
     let data = await response.json();
-    console.log(data);
     console.log(data.message);
-
-    btn.addEventListener('click', getData);
-    img.src = data.message;
 }
+getFacts();
 
-getData();
+
 
 
 
