@@ -102,19 +102,36 @@
 // }
 // getFacts(); 
 
-const URL = 'https://dog.ceo/api/breeds/image/random';
-function getFacts() {
-    fetch(URL).then((response) => {
-        return response.json();
+// const URL = 'https://dog.ceo/api/breeds/image/random';
+// function getFacts() {
+//     fetch(URL).then((response) => {
+//         return response.json();
 
-    }).then((data) => {
-        console.log(data);
-        let p = document.getElementById('p');
-        p.textContent = data.message;
-    })
-};
-    let btn = document.getElementById('btn');
-    btn.addEventListener('click', getFacts);
+//     }).then((data) => {
+//         console.log(data);
+//         let p = document.getElementById('p');
+//         p.textContent = data.message;
+//     })
+// };
+//     let btn = document.getElementById('btn');
+//     btn.addEventListener('click', getFacts);
+
+
+// const URL = 'https://dog.ceo/api/breeds/image/random';
+
+// function getFacts() {
+//     fetch(URL).then((response) => {
+//         return response.json();
+//     }).then((data) => {
+//         console.log(data);
+//         let p = document.getElementById('p');
+//         p.innerText = data.message;
+
+//         let btn = document.getElementById('btn');
+//         btn.addEventListener('click', getFacts);
+//     })
+// };
+// getFacts();
 
 
 
