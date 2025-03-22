@@ -83,24 +83,38 @@
 
 // getData();
 
+// const URL = 'https://dog.ceo/api/breeds/image/random';
+// const getFacts = async () => {
+//     console.log('getting data from ....');
+//     let response = await fetch(URL);
+//     let data = await response.json();
+//     console.log(data.message);
+
+//     let img = document.getElementById('img');
+//     img.setAttribute('src', data.message);
+
+//     let btn = document.getElementById('btn');
+//     btn.addEventListener('click', getFacts);
+
+//     let p = document.getElementById('p');
+//     p.textContent = data.message;
+
+// }
+// getFacts(); 
+
 const URL = 'https://dog.ceo/api/breeds/image/random';
-const getFacts = async () => {
-    console.log('getting data from ....');
-    let response = await fetch(URL);
-    let data = await response.json();
-    console.log(data.message);
+function getFacts() {
+    fetch(URL).then((response) => {
+        return response.json();
 
-    let img = document.getElementById('img');
-    img.setAttribute('src', data.message);
-
+    }).then((data) => {
+        console.log(data);
+        let p = document.getElementById('p');
+        p.textContent = data.message;
+    })
+};
     let btn = document.getElementById('btn');
     btn.addEventListener('click', getFacts);
-
-    let p = document.getElementById('p');
-    p.textContent = data.message;
-
-}
-getFacts(); 
 
 
 
