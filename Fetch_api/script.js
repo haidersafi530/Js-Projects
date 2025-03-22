@@ -96,6 +96,9 @@ const getFacts = async () => {
     let btn = document.getElementById('btn');
     btn.addEventListener('click', getFacts);
 
+    let p = document.getElementById('p');
+    p.textContent = data.message;
+
 }
 getFacts(); 
 
