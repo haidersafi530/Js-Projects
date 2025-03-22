@@ -89,8 +89,17 @@ const getFacts = async () => {
     let response = await fetch(URL);
     let data = await response.json();
     console.log(data.message);
+
+    let img = document.getElementById('img');
+    img.setAttribute('src', data.message);
+
+    let btn = document.getElementById('btn');
+    btn.addEventListener('click', getFacts);
+
 }
-getFacts();
+getFacts(); 
+
+
 
 
 
