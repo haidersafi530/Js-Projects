@@ -133,6 +133,14 @@
 // };
 // getFacts();
 
+let arr = new Array();
+let ar = [];
+
+let fruit = ["apple", "orange", "plum"];
+alert(fruit[0]);
+alert(fruit[1]);
+alert(fruit[2]);
+
 
 
 
