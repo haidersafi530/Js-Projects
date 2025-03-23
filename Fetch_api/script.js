@@ -133,15 +133,20 @@
 // };
 // getFacts();
 
-let arr = new Array();
-let ar = [];
+// let arr = new Array();
+// let ar = [];
 
-let fruit = ["apple", "orange", "plum"];
-alert(fruit[0]);
-alert(fruit[1]);
-alert(fruit[2]);
+// let fruit = ["apple", "orange", "plum"];
+// alert(fruit[0]);
+// alert(fruit[1]);
 
+let fruits = ["Apple", "Orange", "Plum"];
 
+alert( fruits[0] ); // Apple
+alert( fruits[1] ); // Orange
+alert( fruits[2] ); // Plum
+
+alert(fruits.length);
 
 
 
