@@ -11,3 +11,13 @@ function loadData() {
     xhttp.send();
 
 }
+function loadData1() {
+    let xhttp1 = new XMLHttpRequest();
+    xhttp1.onreadystatechange = function () {
+        if(this.readyState == 4 && this.status == 200){
+            document.getElementById('').innerHTML = this.responseText;
+        }
+    }
+    xhttp1.open('GET', '', true);
+    xhttp1.send();
+}
