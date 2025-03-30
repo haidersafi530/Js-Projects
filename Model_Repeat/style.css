@@ -1,0 +1,58 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    font-family: monospace;
+}
+main{
+    display: grid;
+    place-items: center;
+    min-height: 100vh;
+}
+.openModelButton{
+    padding: 6px 12px;
+    background-color: black;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+.model{
+    background-color: lightblue;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: grid;
+    place-items: center;
+}
+
+.model-content{
+    background-color: #fff;
+    padding: 2rem;
+    border-radius: 1rem;
+}
+.model-button{
+    text-align: center;
+    margin-top: 1rem;
+    padding: 6px 12px;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+.close{
+    display: none;
+}
+
+.close-model{
+    text-align: center;
+    margin-top: 1rem;
+    padding: 6px 12px;
+    background-color: black;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
