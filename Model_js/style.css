@@ -29,12 +29,12 @@ main{
     display: grid;
     place-items: center;
 }
-.modal_content{
+.modal-content{
     background-color: #fff;
     padding: 2rem;
     border-radius: 1rem;
 }
-.modal_button{
+.modal-button{
     text-align: center;
     margin-top: 1rem;
     padding: 6px 12px;
@@ -47,7 +47,7 @@ main{
     display: none;
 }
 
-.close_modal{
+.close-modal{
     text-align: center;
     margin-top: 1rem;
     padding: 6px 12px;

@@ -30,4 +30,4 @@ let closemodal = () => {
 
 closeModlaButton.addEventListener('click', () => {
     closemodal();
-})
+});
