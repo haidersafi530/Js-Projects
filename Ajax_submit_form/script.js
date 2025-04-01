@@ -26,7 +26,7 @@ form.submit.addEventListener('click', () => {
     const resquestDatas = `username=${form.username.value}&password=${form.password.value}`;
     console.log(resquestDatas);
 
-    resquest.open('post', 'http://localhost/ajax/check_login.php');
+    resquest.open('post', '/readme.txt');
     resquest.setRequestHeader('Content-type', 'application/x-www-form-urlencoded');
     resquest.send(resquestDatas);
 
