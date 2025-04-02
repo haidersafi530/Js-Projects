@@ -1,0 +1,19 @@
+[
+    {
+    "user" : "Haider",
+    "age" : 21,
+    "subject" : "Javascript Ajax"
+    },
+
+    {
+        "user" : "Imran",
+        "age" : 30,
+        "subject" : "Javascript Ajax"
+    },
+
+    {
+        "user" : "Shayan",
+        "age" : 25,
+        "subject" : "Javascript Ajax"
+    }
+]
