@@ -10,19 +10,17 @@ add.addEventListener('click', function addTask() {
 
     const li = document.createElement('li');
     li.textContent = taskText;
-    
 
-    const deleteBtn = document.createElement('button');
-    deleteBtn.textContent = 'Delete';
-    deleteBtn.onclick = function () {
+    const delBtn = document.createElement('button');
+    delBtn.innerHTML = "Delete<br><br>";
+    delBtn.onclick = function () {
         li.remove();
     }
 
-    li.appendChild(deleteBtn);
+    li.appendChild(delBtn);
     document.getElementById('taskList').appendChild(li);
 
     taskInput.value = "";
-
 });
 
 
