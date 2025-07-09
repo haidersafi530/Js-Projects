@@ -37,6 +37,37 @@
 //     console.log(i);
 // }
 
-for (let i = 10;  i > 0; i--){
-    console.log(i);
-}
+// for (let i = 10;  i > 0; i--){
+//     console.log(i);
+// }
+
+// for (let i = 1; i <= 20; i++){
+//     if (i%2 === 0){
+//         console.log(i)
+//     }
+// }
+// let i = 1;
+// while(i < 16){
+//     if(i % 2 === 1){
+//         console.log(i);
+//     }
+//     i++
+// }
+// for (i = 1; i < 10 ; i++){
+//     console.log(i * 5);
+// }
+
+// for(let i = 1; i < 51 ; i++){
+//     if(i % 3 === 0){
+//         console.log(i);
+//     }
+// }
+
+let val = prompt("check the numbers");
+for(let i = 1; i <= val; i++){
+    if(i % 2 === 0){
+        console.log(`${i} is even`);
+    }else{
+        console.log(`${i} is odd`);
+    }
+} 
