@@ -1,3 +1,4 @@
-let att = document.getElementById('hi');
-att.setAttribute('my');
-console.log(att);
+let li = document.querySelectorAll('ul li:nth-child(2n)');
+li.forEach(function (elem) {
+    elem.classList.add('h1')
+})
