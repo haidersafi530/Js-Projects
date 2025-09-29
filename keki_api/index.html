@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Kekkei Genkai API</title>
+</head>
+<body>
+  <h1>Naruto Kekkei Genkai Abilities</h1>
+  <button id="load">Load Abilities</button>
+  <div id="abilities"></div>
+
+  <script>
+    const url = "https://dattebayo-api.onrender.com/kekkei-genkai";
+    const btn = document.getElementById("load");
+    const abilities = document.getElementById("abilities");
+
+    btn.addEventListener("click", () => {
+      fetch(url)
+        .then((res) => res.json())
+        .then((data) => {
+          const kekkeiList = data["kekkei-genkai"];
+
+          // 🧹 Clear previous data (if any)
+          abilities.innerHTML = "";
+
+          // ✅ Create UL list
+          const ul = document.createElement("ul");
+
+          kekkeiList.forEach((item) => {
+            const li = document.createElement("li");
+            li.textContent = item.name;
+            ul.appendChild(li);
+          });
+
+          // ✅ Append UL to the abilities div
+          abilities.appendChild(ul);
+        })
+        .catch((err) => {
+          abilities.innerHTML = `<p style="color:red;">❌ Failed to load abilities</p>`;
+          console.error("❌ Error loading kekkei-genkai:", err);
+        });
+    });
+  </script>
+</body>
+</html>
