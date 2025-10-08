@@ -166,5 +166,111 @@
 
 
 
-let s = 'my' + 'string';
-alert(s);
+// let s = 'my' + 'string';
+// alert(s);
+
+// alert('1' + 2);
+// alert(2 + '1');
+
+// alert(2 + 2 + "1");
+
+// alert('1' + 2 + 2);
+
+// alert(6 - '3' );
+// alert('7 ' / '2');
+
+// let x = 1;
+// alert( +x );
+
+// let y = -2;
+
+// alert(+true);
+// alert(+false);
+
+// alert(+"");
+// alert(+'123');
+// alert(+'hello');
+
+
+// let apple = '2';
+// let orange = '3';
+// alert(apple+orange);
+
+// let apples = '2';
+// let oranges = '3';
+// alert(+ apples + +oranges);
+
+// let x = 2 * 2 + 1;
+// alert(x);
+
+// let a = 1;
+// let b = 2;
+
+// let c = 3 - (a = b + 1);
+
+// let a,b,c;
+// a = b = c = 2 + 2 + 2;
+// alert(a,b,c);
+// alert(b);
+// alert(c);
+
+// let n = 5;
+// n = n + 10;
+// n = n * 4;
+// alert(n)
+
+// let n = 2;
+// n += 5;
+// n *= 2;
+// alert(n);
+
+// let n = 200;
+// n *= 50 + 30;
+// alert(n);
+
+
+// let counter = 2;
+// counter++;
+// alert(counter);
+
+// let counter = 2;
+// counter --;
+// alert(counter)
+
+// let counter = 1;
+// let a = ++counter;
+// alert(a);
+
+// let counter = 1;
+// let a = counter++;
+// alert(a);
+// alert(a);
+
+// let counter = 0;
+// counter++;
+// ++counter;
+// alert(counter);
+
+
+// let counter = 0;
+// alert(++counter);
+
+
+// let counter = 1;
+// alert(2 * counter++);
+
+
+// let counter = 1;
+// alert(2 * counter);
+// counter++;
+
+// let n = 20;
+// n *= 29+ 20;
+// alert(n);
+
+let n = 500;
+n *= 259 + 200;
+alert(n);
+
+
+

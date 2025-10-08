@@ -1,0 +1,206 @@
+/*
+ Theme Name:   Kadence Child
+ Theme URI:    https://example.com/
+ Description:  Kadence Child Theme
+ Author:       Your Name
+ Author URI:   https://example.com/
+ Template:     kadence
+ Version:      1.0.0
+*/
+.social-icons{
+	color: #a0a0a0;
+	background: transparent;
+}
+.portfolio-a {
+	color: #2b52e0;
+}
+
+
+.entry-summary{
+	font-family: Poppins;
+	font-weight: 400;
+}
+.loop-entry .entry-summary p{
+	font-size: 15px;
+	font-family: Poppins;
+	font-weight: 300;
+}
+
+.more-link-wrap .post-more-link{
+	color: #000;
+	font-weight: 500;
+	font-family: Poppins;
+	
+}
+
+.logo img{
+	width: 120px;	
+}
+
+/* popup */
+/* realbtndisplay  */
+.porfolio_external_link{
+	display: none;
+}
+
+.porfolio_external_link-h{
+  font-size: 1rem;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  display: inline-block;
+	background: #000;
+  text-align: center;
+  font-weight: bold;
+  padding: 0.6em 1.6em;
+  border: 2px solid black;
+  border-radius: 2px;
+  position: relative;
+	
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.1);
+  color: #fff;
+  text-decoration: none;
+  transition: 0.3s ease all;
+  z-index: 1;
+}
+
+.porfolio_external_link-h:before {
+  transition: 0.5s all ease;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  right: 50%;
+  bottom: 0;
+  opacity: 0;
+  content: '';
+  background-color:#5BD093;
+  z-index: -1;
+}
+
+.porfolio_external_link-h:hover, .porfolio_external_link-h:focus {
+  color: #fff;
+}
+
+.porfolio_external_link-h:hover:before, .porfolio_external_link-h:focus:before {
+  transition: 0.5s all ease;
+  left: 0;
+  right: 0;
+  opacity: 1;
+}
+
+.porfolio_external_link-h:active {
+  transform: scale(0.9);
+}
+
+@media only screen and (max-width:768px) {
+	.porfolio_external_link-h{
+		padding: 0.6rem 1.4rem;
+		font-size: 0.8rem;
+	}
+}
+.project-poster img {
+	filter: grayscale(1);
+}
+.pps_portfolio_grid_title {
+	font-family: gilroy;
+	font-weight: 300;
+	letter-spacing: 1px;
+	
+}
+
+
+/* Blog Pofile*/
+/* Desktop / default */
+.custom-author-box {
+    display: flex;
+    align-items: flex-start;
+    gap: 15px;
+}
+
+/* Avatar */
+.custom-author-box .author-avatar img {
+    border-radius: 50%;
+}
+
+/* iPad / tablet / mobile */
+@media (max-width: 1024px) {
+    .custom-author-box {
+        display: block; /* Avatar and info stacked vertically */
+        text-align: center;
+    }
+
+    .custom-author-box .author-avatar {
+        margin: 0 auto 10px;
+    }
+
+    .custom-author-box .author-info {
+        text-align: center;
+    }
+}
+
+/* In This Article Box Styling */
+.in-this-article-box {
+	border: none;
+	box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
+	position: -webkit-sticky;
+  	position: sticky;
+	top: 10px;
+    background-color: 				#FFFFFF;
+    border-radius: 20px;
+    padding: 20px;
+	max-height: 280px;	
+}
+.in-this-article-box h4{
+	font-family: Poppins;
+	font-weight: 500;
+	margin: 0 0 10px 0;
+  flex-shrink: 0; 
+}
+
+.in-this-article-box ul {
+    list-style: none;
+    padding: 14px;
+    margin: 0;
+    overflow-y: auto;   /* sirf list scroll hogi */
+    max-height: 180px;  /* list ki max height */
+}
+
+
+
+.in-this-article-box ul li {
+		font-size: 14px;
+		font-weight: 500;
+    margin-bottom: 8px;
+		font-family: Poppins;
+		color: #000;
+}
+
+
+.in-this-article-box ul li a{
+	color: #000;
+	
+}
+
+.in-this-article-box ul li a.active {
+    color: #2B51DF;
+}
+
+/* writter avatars*/
+.image-box {
+	border-radius: 50%;
+}
+.image-box img{
+	border-radius: 50%;
+}
+        .toc-link.active {
+           
+            color: #2B51DF; /* WP blue */
+        }
+
+.wp-site-blocks .post-thumbnail:not(.kadence-thumbnail-ratio-inherit) img {
+	border-radius: 20px;
+}
+.title_wrapper .aab__accordion_title{
+  font-size: 16px;
+  font-weight: 500;
+}
+
