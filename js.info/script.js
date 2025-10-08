@@ -268,9 +268,26 @@
 // n *= 29+ 20;
 // alert(n);
 
-let n = 500;
-n *= 259 + 200;
-alert(n);
+// let n = 500;
+// n *= 259 + 200;
+// alert(n);
 
+// let counter = 0;
+// counter++;
+// ++counter;
+// alert(counter);
 
+// let counter = 0;
+// alert(++counter);
 
+// let a = (1+2,3+4);
+// alert(a);
+
+// let a = 1, b = 1;
+// let c = ++a;
+// let d = b++;
+
+// document.write(d)
+
+let a =" \t \n" - 2;
+alert(a)
