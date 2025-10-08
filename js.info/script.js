@@ -289,5 +289,46 @@
 
 // document.write(d)
 
-let a =" \t \n" - 2;
-alert(a)
+// let a =" \t \n" - 2;
+// alert(a)
+
+//comparison operators 
+
+// alert(2 > 1);
+// alert( 2 == 1);
+// alert(2 != 1);
+
+
+// let result = 5 > 4;
+// alert(result);
+
+// string  operators 
+
+// alert('a' > "Z");
+
+
+// comparison different types 
+// alert('2' > 1);
+// alert( '01' == 1)
+
+// alert(true == 1);
+// alert(false == 0);
+
+// let a = 0;
+// alert(Boolean(a));
+// let b = "0";
+// alert(Boolean(b));
+// alert(a == b);
+
+// alert(0 == false);
+
+// alert('' == false);
+
+// alert(0 === false); 
+
+// alert(null === undefined);
+
+// alert(null == undefined);
+
+// alert("apple" > "pineapple")
+alert(null === +"\n0\n")
