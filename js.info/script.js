@@ -331,4 +331,78 @@
 // alert(null == undefined);
 
 // alert("apple" > "pineapple")
-alert(null === +"\n0\n")
+// alert(null === +"\n0\n")
+
+//conditional branching 
+
+// let year = prompt('In which year was ECMAScript-2015 specification published?');
+// if(year == 2015) alert('You are right');
+// if(year != 2015) alert('you are wrong');
+
+// if(year == 2015) {
+//     alert('thats correct');
+//     alert('you re so smart');
+// }else{
+//     alert('you re weak')
+// }
+
+// if(year == 2015) {
+//     alert('you guessd it right');
+
+// }else{
+//     alert('how you can be so wrong?');
+
+// }
+
+
+// if(year < 2015) {
+//     alert('too early');
+// }else if (year > 2015) {
+//     alert('to late');
+// }else{
+//     alert('exactly');
+// }
+
+
+// // let accessAllowed;
+// let age = prompt('how old are you');
+// if(age > 18) {
+//     accessAllowed = true;
+
+// }else{
+//     accessAllowed = false;
+// }
+// alert(accessAllowed);
+
+
+// let accessAllowed = (age > 18) ? true : false;
+// alert(accessAllowed);
+
+
+// let age = prompt('age?', 18);
+// let message = (age < 3) ? "Hi baby" : (age < 18) ? "hello" : (age < 100 ) ? "Greeting" : "Whats a unusual age";
+// alert(message); 
+// let message;
+// if(age < 3) {
+//     message = "Hi baby";
+// }else if(age  <  18) {
+//     message = "Hello";
+// }else if(age < 100) {
+//     message = "greeting!";
+// }else{
+//     message = 'whats a unusal age';
+// }
+// alert(message);
+
+
+// let company = prompt('which company created javascript');
+// if(company == "netscape"){
+//     alert('right');
+// }else{
+//     alert('wrong');
+// }
+
+let zero = (0);
+if(zero) {
+    alert('hello');
+}
